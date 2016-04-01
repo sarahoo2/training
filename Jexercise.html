@@ -1,0 +1,72 @@
+<html>
+  <head> <title></title> </head>
+  <script src="js/jquery-1.12.2.min.js"> </script>
+  <body>
+
+  <div class="container">
+    <div class="jumbotron">
+    <h1> Test </h1>
+    <button class="panel-button" data-panelid="panel1">#btn1</button>
+    <button class="panel-button" data-panelid="panel2">#btn2</button>
+    <button class="panel-button" data-panelid="panel3">#btn3</button>
+
+    </div>
+
+
+    <div class="row">
+      <div id="panel1" style="display:none" class="panel panel-primary" >
+        <div class="panel-heading">
+        #panel1
+      </div>
+        <div class="panel-body" > content this and that..
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="panel2" style="display:none" class="panel panel-primary" >
+        <div class="panel-heading">
+        #panel2
+      </div>
+        <div class="panel-body" > content this and that..
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="panel3" style="display:none" class="panel panel-primary" >
+        <div class="panel-heading">
+        #panel3
+      </div>
+        <div class="panel-body" > content this and that..
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</br>
+
+  </body>
+</html>
+
+<script>
+  // $(function(){
+  // $('.panel-button').on('click',function(){
+  //   $('#panel1').toggle();
+  //   });
+  // });
+
+  $(function(){
+
+    var content="My new awesome content";
+
+    $('.panel-button').on('click',function(){
+      var panelId=$(this).attr('data-panelid');
+      $('#'+panelId).toggle();
+      $('.panel-body' ).html(content);
+    });
+
+  });
+
+</script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    </title>
+
+  </head>
+  <body>
+    <h1>New HTML5 Input Types demo</h1>
+    <p>This form demostrates more HTML5 new features.</p>
+    <form method="POST" action="">
+      <p><label>Month:</label>
+        <input type="month" name="month"/>(month,yyyy)
+      </p>
+
+      <p><label>Number:</label>
+        <input type="number" min="1" max="10" name="number"/>(Enter a number between 1 and 10)
+      </p>
+
+      <p><label>Range:</label>
+        0<input type="range" name="points" min="0" max="50"
+          onchange="updateSlider(this.value)"/>50
+      </p>
+
+      <p><label>Search:</label>
+        <input type="search" name="points" placeholder="search query"/>(Enter your search query)
+      </p>
+
+      <p><label>Tel:</label>
+        <input type="tel" placeholder="03-12345678"/>(##-########)
+      </p>
+
+      <p><label>Time:</label>
+        <input type="time" name="usrTime"/>(hh:mm)
+      </p>
+
+      <p><label>URL:</label>
+        <input type="url" name="homePage" placeholder="https://domainname.com"/>(https://domainname.com)
+      </p>
+
+      <p><label>Week:</label>
+        <input type="week" name="usrWeek"/>(ww,yyyy such as 02,2015)
+      </p>
+
+      <p>
+        <input type="submit" name="submit" value="Submit"/>
+        <input type="submit" name="clear" value="Clear"/>
+      </p>
+
+    </form>
+
+  </body>
+</html>
+
+<script src="http://localhost:35729/livereload.js"></script>

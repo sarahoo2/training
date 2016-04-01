@@ -1,0 +1,40 @@
+.top{
+  background-color: PaleVioletRed ;
+  color:white;
+  padding:20px;
+  text-align:center;
+
+}
+.left{
+  line-height: 30px;
+  width:30%;
+  height:300px;
+  padding:10px;
+  background-color:PapayaWhip ;
+  float:left;
+}
+
+span#drop{
+  font-style: oblique;
+  text-align: center;
+  font-size: 20px;
+  color:pink;
+
+}
+#selectkit{
+  margin-left:10px;
+  color:Pink;
+  fontsize:15px;
+}
+#sectionbody{
+  width:350px;
+  float:left;
+  padding:10px;
+}
+#footer{
+  background-color: PaleVioletRed;
+  color:white;
+  clear:both;
+  text-align:center;
+  padding:5px;
+}
